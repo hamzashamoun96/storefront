@@ -1,6 +1,6 @@
 # storefront
 Virtual Store Phase 1: For this assignment, you will be starting the process of creating an e-Commerce storefront using React with Redux, coupled with your live API server.<br>
-[Pull Request](https://github.com/hamzashamoun96/storefront/pull/9)<br>
+[Pull Request](https://github.com/hamzashamoun96/storefront/pull/2)<br>
 [Netlify](https://hamza2021-storefront.netlify.app/)
 
 
