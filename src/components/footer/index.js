@@ -3,7 +3,7 @@ import React from 'react';
 function Footer(props){
     return(
         <footer>
-           © 2021 Javascript 401
+           <span>&copy;</span> 2021 ASAC Store
         </footer>
     );
 }
