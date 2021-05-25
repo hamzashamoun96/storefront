@@ -1,28 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 body {
   margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+li{
+  list-style-type: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.categories{
+  text-align: center;
+  h2{
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0;
+    padding: 2% 0 2% 0 ;
+    background-color: #eee;
+  }
+  hr{
+    margin: 0;
+  }
+  h3{
+    margin: 0;
+    font-family: "Pattaya", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    background-color: #eee;
+  }
+.catBtns{
+  h1{
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 20px 0 0 0;
+  }
+  button{
+    border-radius: 0;
+    color: black;
+    background-color: wheat;
+    font-size: 1.3rem;
+    font-family: 'Cabin Sketch', cursive;
+    margin: 0 1% 0 0;
+  }
+  .activeBtn{
+    background-color: black;
+    color: wheat;
+  }
+}
+}
+
 
 .appBar{
+  h5 ,span{
+    font-family: 'Cabin Sketch', cursive;
+    color: wheat;
+    }
   justify-content: space-between;
+  background-color: #26354e;
+span{
+  font-size: 1.2rem;
+}
+button{
+  width: 8.5%;
+  display: flex;
+  justify-content: space-between;
+}
 }
 footer{
   width: 100%;
   padding: 15px 0 15px 0;
   text-align: center;
-  color: white;
+  color: wheat;
+  font-family: 'Cabin Sketch', cursive;
   font-size: 1.5rem;
-  background-color: #3f51b5;
+  background-color: #26354e;
+  span{
+    font-size: 2rem;
+  }
 }
+
 .container{
   position: relative;
   z-index: 1;
@@ -34,14 +96,60 @@ footer{
     margin: 5% 0 5% 0;
     width: 25%;
     box-shadow: 3px 3px 5px 2px dimgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button{
+      margin:5% 0 0 0;
+    }
   }
   .MuiCardMedia-root{
     background-size: contain;
   }
   .MuiCardContent-root{
     text-align: center;
+    h2,h3{
+      font-family: "Cinzel Decorative", cursive;
+      font-weight: 900;
+    }
+    h4{
+      padding-top: 7%;
+      border-top: 1px solid black;
+    }
+    p{
+      font-family: "Pattaya", sans-serif;
+    }
   }
   .MuiCardActions-root{
     justify-content: space-evenly;
+    button{
+   color: black;
+    background: #f0c14b;
+    border: 1px solid;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: "Cabin Sketch", cursive;
+    margin: 0 1% 0 0;
+    }
+  }
+}
+.chips{
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 75px;
+  .MuiChip-root{
+    width: 100%;
+    justify-content: space-between;
+    background-color: #26354e;
+  }
+  .MuiChip-deleteIcon{
+    color: white;
+  }
+  .MuiChip-label{
+    color:wheat;
   }
 }

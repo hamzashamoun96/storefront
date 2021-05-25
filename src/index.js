@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import "./index.scss";
 import { Provider } from 'react-redux';
 import store from './store';
-
+document.title = 'ASAC STORE'
 ReactDOM.render(
   <React.StrictMode>
     <Provider store = {store}>
