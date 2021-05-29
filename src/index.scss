@@ -63,13 +63,11 @@ code {
     }
   justify-content: space-between;
   background-color: #26354e;
-span{
+  button{
+    margin: 0 15px 0 0;
+  }
+ span{
   font-size: 1.2rem;
-}
-button{
-  width: 8.5%;
-  display: flex;
-  justify-content: space-between;
 }
 }
 footer{
@@ -133,18 +131,38 @@ footer{
     }
   }
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eee; 
+}
+::-webkit-scrollbar-thumb {
+  background: #26354e; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #172133 ; 
+}
 .chips{
-  display: flex;
-  flex-wrap: wrap;
-  width: 20%;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
+  width: 24%;
   position: fixed;
   z-index: 2;
-  right: 0;
-  top: 75px;
+  right: -350px;
+  top: 0;
+  background-color: wheat;
+  height: 100vh;
+  svg:first-child{
+    color: black;
+    font-size: 2.5rem;
+    margin: 2% 0 5% 5%;
+    cursor: pointer;
+  }
   .MuiChip-root{
-    width: 100%;
+    width: 97%;
     justify-content: space-between;
-    background-color: #26354e;
+    background-color: #26354ecc;
   }
   .MuiChip-deleteIcon{
     color: white;
@@ -152,4 +170,20 @@ footer{
   .MuiChip-label{
     color:wheat;
   }
+}
+.hamBar{
+  display:flex;
+  #hamBars{
+    cursor: pointer;
+    font-size:2.5rem;
+    color:wheat;
+  }
+}
+#blur{
+  position: fixed;
+  height: 100vh;
+  display: none; 
+  background: #ffffffa6;
+  width: 100vw;
+  z-index: 2;
 }

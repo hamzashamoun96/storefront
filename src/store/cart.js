@@ -1,4 +1,3 @@
-import uuid from 'react-uuid';
 const initialState = []
 
 const Cart = (state = initialState , action) =>{
@@ -6,10 +5,12 @@ const Cart = (state = initialState , action) =>{
 
     switch(type){
         case "ADDING" :
-            payload.id = uuid()
+            if(payload.inStock !== 0){
             return [...state,payload];
+            }
+            break
         case "DELETE" :
-            const afterDeleting = state.filter(ele => !(payload===ele.id))
+            const afterDeleting = state.filter((ele,idx) => !(payload===idx))
             return afterDeleting
         default:
             return state;
