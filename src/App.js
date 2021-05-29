@@ -7,6 +7,7 @@ import Products from './components/products';
 function App() {
   return (
     <>
+    <div id="blur"></div>
     <Header/>
     <Categories/>
     <Products/>
